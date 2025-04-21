@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using ProjectionManagers;
+using UnityEngine;
 using UnityEngine.Assertions;
 
 public class ProjectionManagerRoomSample : MonoBehaviour
@@ -54,7 +55,7 @@ public class ProjectionManagerRoomSample : MonoBehaviour
         projectionManager.textureBottom = renderTextureBottom;
     }
 
-    protected virtual void OnDestroy()
+    protected void OnDestroy()
     {
         // NOTE:
         // Camera shows null in sometimes. For example when scene will be closed.
@@ -72,7 +73,7 @@ public class ProjectionManagerRoomSample : MonoBehaviour
         DestroyImmediate(renderTextureBottom);
     }
 
-    protected virtual void ClearRenderTarget(Camera camera) 
+    protected void ClearRenderTarget(Camera camera) 
     {
         if (camera != null)
         {

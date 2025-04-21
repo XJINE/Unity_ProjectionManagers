@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+namespace ProjectionManagers {
 public class ProjectionManagerRoom : ProjectionManager
 {
     #region Enum
@@ -58,7 +59,7 @@ public class ProjectionManagerRoom : ProjectionManager
                 // Output image.
                 // ―――――――――――――――――――――――――――――――――――――――――
                 // | ↑ Front  | ↑ Left   | Bottom | Bottom |
-                // ――――――――――――――――――――― | Left   | Right  |
+                // ―――――――――――――| Left   | Right  |
                 // | ↑ Back   | ↑ Right  | →      | →      |
                 // ―――――――――――――――――――――――――――――――――――――――――
 
@@ -92,4 +93,4 @@ public class ProjectionManagerRoom : ProjectionManager
     }
 
     #endregion Method
-}
+}}

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+namespace ProjectionManagers {
 [RequireComponent(typeof(Camera))]
 public abstract class ProjectionManager : MonoBehaviour
 {
@@ -100,4 +101,4 @@ public abstract class ProjectionManager : MonoBehaviour
     }
 
     #endregion Method
-}
+}}
